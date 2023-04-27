@@ -6,7 +6,7 @@ serve(async (req) => {
   const { query } = await req.json()
 
   const completionConfig: CreateCompletionRequest = {
-    model: 'text-davinci-003',
+    model: 'text-davinci-003'
     prompt: query,
     max_tokens: 256,
     temperature: 0,
